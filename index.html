@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <!-- Font Awesome (para los iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <main class="contenedor">
+      <section class="arriba">
+        <h1>Todo List</h1>
+        <hr>
+        <h4>Nueva Tarea</h4>
+        <div class="nueva-tarea-form">
+          <input id="nuevaTarea" placeholder="Escribe una tarea aquí">
+          <button id="agregarTarea">Agregar</button>
+        </div>
+      </section>
+
+      <section class="abajo">
+        <div class="resumen">
+          <p id="cuenta-tareas">Total: 0</p>
+          <p id="cuenta-realizadas">Realizadas: 0</p>
+        </div>
+      
+      
+        <section class="panel-derecho">
+          <div class="tabla-tareas">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Tarea</th>
+                  <th></th> <!-- Columna para botón de completar -->
+                  <th></th> <!-- Columna para botón de borrar -->
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
